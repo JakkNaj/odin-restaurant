@@ -1,0 +1,20 @@
+{
+  "name": "odin-restaurant",
+  "version": "1.0.0",
+  "description": "Website of a restaurant",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "restaurant"
+  ],
+  "author": "Jakub Najman",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
