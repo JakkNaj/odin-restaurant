@@ -1,0 +1,82 @@
+#kitchenView {
+    display: block;
+    object-fit: cover;
+    width: 90%;
+    margin: auto;
+    border-radius: 6px;
+}
+
+.infoBlock >h3 {
+    font-weight: bold;
+    font-size: 18px;
+    align-self: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.infoBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    gap: 30px;
+}
+
+
+.dinnerReservations {
+    padding-top: 40px;
+}
+
+.orderBtn {
+    margin-top: 20px;
+    padding: 25px 46px;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    border:2px solid #222;
+    background: none;
+    transition: 0.1s background-color linear, 0.1s color linear;
+}
+
+.orderBtn:hover {
+    background-color: #222;
+    color: white;
+}
+
+.imageSection {
+    margin: auto;
+    width: 90%;
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.imageSection >img {
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#sushiView {
+    width: 100%;
+}
+
+#dinerView {
+    width: 90%;
+}
+
+.small-description {
+    padding-top: 40px;
+    width: 50%;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.mainContent {
+    padding-top: 20px;
+    padding-bottom: 80px;
+}

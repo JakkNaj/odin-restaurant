@@ -1,4 +1,5 @@
 import InstaIcon from './instagramIcon.png';
+import './header.css';
 
 const header = document.createElement('header');
 
@@ -65,6 +66,8 @@ header.appendChild(topLeft);
 header.appendChild(topCenter);
 header.appendChild(topRight);
 
+
+//-------------------------------------
 export default header;
 
 

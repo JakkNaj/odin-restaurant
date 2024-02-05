@@ -1,0 +1,64 @@
+header h1{
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 60px;
+    line-height: 2;
+}
+
+ol li {
+    display: block;
+}
+
+nav button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #2d2926;
+}
+
+header nav {
+    line-height: 1.5em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.top-classes {
+    min-width: 0;
+    max-width: 100%;
+    display: flex;
+    flex: 1 1 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.top-right {
+    display: flex;
+    text-align: right;
+    padding-left: 20px;
+}
+
+.top-right .inner-nav {
+    display: block;
+    line-height: 2em;
+}
+
+.inner-nav >button {
+    margin-left: 0.5em;
+    transition: all 0.3s;
+}
+
+.inner-nav >button:hover {
+    font-weight: 500;
+    color: black;
+    transform: scale(1.01);
+}
