@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=La+Belle+Aurore&family=Nanum+Gothic&family=Roboto+Mono&display=swap');
+
+.content {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1{
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 60px;
+    line-height: 2;
+}
+
+nav ol {
+    counter-reset: item;
+    list-style-type: none;
+}
+
+ol li {
+    display: block;
+}
+
+ol li:before {
+    content: counter(item) "  ";
+    counter-increment: item
+}
+
+nav button {
+    font-family: 'Nanum Gothic', sans-serif;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+header nav {
+    line-height: 1.5em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.top-classes {
+    min-width: 0;
+    max-width: 100%;
+    display: flex;
+    flex: 1 1 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.top-right {
+    display: flex;
+    text-align: right;
+    padding-left: 20px;
+}
+
+.top-right .inner-nav {
+    display: block;
+    line-height: 2em;
+}
+
+.inner-nav >button {
+    margin-left: 0.5em;
+    transition: all 0.3s;
+}
+
+.inner-nav >button:hover {
+    font-weight: bold;
+    color: black;
+    transform: scale(1.01);
+}
