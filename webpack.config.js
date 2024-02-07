@@ -8,6 +8,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            template: './src/index.template.html',
             title: 'Restaurant assignment',
             inject: 'body',
         }),

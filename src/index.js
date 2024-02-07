@@ -1,13 +1,37 @@
 import './homepage.css';
-import header from './header/header.js';
-import main from './main/main.js';
+import loadMain from './main/main.js';
+import loadHeader from "./header/header.js";
+import loadMenu from "./menu/menu";
 
-const content = document.createElement('div');
-content.classList.add("content");
+const header = document.getElementById("header");
+header.appendChild(loadHeader());
 
-content.appendChild(header);
+document.addEventListener('DOMContentLoaded', function() {
+    const content = document.getElementById('content');
 
-content.appendChild(main);
+    function loadPage(page) {
+        content.innerHTML = '';
+        content.appendChild(page);
+    }
 
-//-------------------------------------
-document.body.appendChild(content);
+    document.querySelectorAll('nav header button.navigBtn, #site-logo').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const url = this.dataset.href;
+            switch (url) {
+                case '#main':
+                    loadPage(loadMain());
+                    break;
+                case '#menu':
+                    loadPage(loadMenu());
+                    break;
+                default:
+                    // Handle unknown URLs
+                    break;
+            }
+        });
+    });
+
+    // Initial load of the homepage
+    loadPage(loadMain());
+});

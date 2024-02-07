@@ -1,7 +1,8 @@
-header h1{
+header h1#site-logo{
     font-family: 'La Belle Aurore', cursive;
     font-size: 60px;
     line-height: 2;
+    cursor: pointer;
 }
 
 ol li {
